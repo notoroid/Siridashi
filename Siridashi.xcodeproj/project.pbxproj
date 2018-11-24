@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F264FA34B4CCBCABDDDF7A7 /* Pods_DashiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FC36BA922310F9E7D92D4C /* Pods_DashiKit.framework */; };
+		804E6AC10A9B45ADF11C9467 /* Pods_Siridashi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10727178D0C94E7052670F67 /* Pods_Siridashi.framework */; };
+		855B288AE7435DB8BDDDD11A /* Pods_DashiIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696AFAAA3C75370679FEF8F /* Pods_DashiIntents.framework */; };
+		87B05182219C3F1000FAEA80 /* DashiSendIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B05180219C3F0900FAEA80 /* DashiSendIntentHandler.swift */; };
+		87D08D7321A8D0D800C21FD3 /* DashiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D08D7121A8D0D800C21FD3 /* DashiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D08D7621A8D0D800C21FD3 /* DashiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */; };
+		87D08D7721A8D0D800C21FD3 /* DashiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87D08D7C21A8D0EA00C21FD3 /* DashiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */; };
+		87D08D7D21A8D0F400C21FD3 /* PostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D08D6321A8CCCF00C21FD3 /* PostUseCase.swift */; };
+		87D08D7E21A8D0F400C21FD3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D08D6421A8CCCF00C21FD3 /* Strings.swift */; };
+		87EDDA6F219A0C0000552A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDDA6E219A0C0000552A5D /* AppDelegate.swift */; };
+		87EDDA71219A0C0000552A5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDDA70219A0C0000552A5D /* ViewController.swift */; };
+		87EDDA74219A0C0000552A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EDDA72219A0C0000552A5D /* Main.storyboard */; };
+		87EDDA76219A0C0100552A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EDDA75219A0C0100552A5D /* Assets.xcassets */; };
+		87EDDA79219A0C0100552A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EDDA77219A0C0100552A5D /* LaunchScreen.storyboard */; };
+		87EDDA87219A0C4200552A5D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EDDA86219A0C4200552A5D /* IntentHandler.swift */; };
+		87EDDA8B219A0C4200552A5D /* DashiIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87EDDA84219A0C4200552A5D /* DashiIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87EDDA99219A136F00552A5D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 87EDDA98219A136F00552A5D /* Intents.intentdefinition */; };
+		87EDDA9B219A175700552A5D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 87EDDA98219A136F00552A5D /* Intents.intentdefinition */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87D08D7421A8D0D800C21FD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87EDDA63219A0C0000552A5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D08D6E21A8D0D800C21FD3;
+			remoteInfo = DashiKit;
+		};
+		87EDDA89219A0C4200552A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87EDDA63219A0C0000552A5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87EDDA83219A0C4200552A5D;
+			remoteInfo = DashiIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87D08D7B21A8D0D800C21FD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87D08D7721A8D0D800C21FD3 /* DashiKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA8F219A0C4200552A5D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87EDDA8B219A0C4200552A5D /* DashiIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07092975282A86B633D46B07 /* Pods-DashiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashiKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DashiKit/Pods-DashiKit.release.xcconfig"; sourceTree = "<group>"; };
+		10727178D0C94E7052670F67 /* Pods_Siridashi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siridashi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2696AFAAA3C75370679FEF8F /* Pods_DashiIntents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashiIntents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A999B95A78798ACC994874 /* Pods-DashiIntents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashiIntents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashiIntents/Pods-DashiIntents.debug.xcconfig"; sourceTree = "<group>"; };
+		42ABAF8931B05C9A324391D1 /* Pods-DashiIntents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashiIntents.release.xcconfig"; path = "Pods/Target Support Files/Pods-DashiIntents/Pods-DashiIntents.release.xcconfig"; sourceTree = "<group>"; };
+		519F8A0CD89556A3743ED572 /* Pods-Siridashi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siridashi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Siridashi/Pods-Siridashi.release.xcconfig"; sourceTree = "<group>"; };
+		87B05180219C3F0900FAEA80 /* DashiSendIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashiSendIntentHandler.swift; path = DashiIntents/DashiSendIntentHandler.swift; sourceTree = SOURCE_ROOT; };
+		87D08D6321A8CCCF00C21FD3 /* PostUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostUseCase.swift; sourceTree = "<group>"; };
+		87D08D6421A8CCCF00C21FD3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		87D08D6721A8CEB800C21FD3 /* Siridashi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Siridashi.entitlements; sourceTree = "<group>"; };
+		87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DashiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D08D7121A8D0D800C21FD3 /* DashiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashiKit.h; sourceTree = "<group>"; };
+		87D08D7221A8D0D800C21FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EDDA6B219A0C0000552A5D /* Siridashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siridashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EDDA6E219A0C0000552A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87EDDA70219A0C0000552A5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87EDDA73219A0C0000552A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87EDDA75219A0C0100552A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87EDDA78219A0C0100552A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87EDDA7A219A0C0100552A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EDDA84219A0C4200552A5D /* DashiIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DashiIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EDDA86219A0C4200552A5D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		87EDDA88219A0C4200552A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EDDA98219A136F00552A5D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		B5310CC2696CD95CEE5AEB9F /* Pods-DashiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashiKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DashiKit/Pods-DashiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FC36BA922310F9E7D92D4C /* Pods_DashiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF79356E7B2C15B9E7292B75 /* Pods-Siridashi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siridashi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Siridashi/Pods-Siridashi.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87D08D6C21A8D0D800C21FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F264FA34B4CCBCABDDDF7A7 /* Pods_DashiKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA68219A0C0000552A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E6AC10A9B45ADF11C9467 /* Pods_Siridashi.framework in Frameworks */,
+				87D08D7621A8D0D800C21FD3 /* DashiKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA81219A0C4200552A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D08D7C21A8D0EA00C21FD3 /* DashiKit.framework in Frameworks */,
+				855B288AE7435DB8BDDDD11A /* Pods_DashiIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526C24C455A73530D6B8CC5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42A999B95A78798ACC994874 /* Pods-DashiIntents.debug.xcconfig */,
+				42ABAF8931B05C9A324391D1 /* Pods-DashiIntents.release.xcconfig */,
+				EF79356E7B2C15B9E7292B75 /* Pods-Siridashi.debug.xcconfig */,
+				519F8A0CD89556A3743ED572 /* Pods-Siridashi.release.xcconfig */,
+				B5310CC2696CD95CEE5AEB9F /* Pods-DashiKit.debug.xcconfig */,
+				07092975282A86B633D46B07 /* Pods-DashiKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87D08D7021A8D0D800C21FD3 /* DashiKit */ = {
+			isa = PBXGroup;
+			children = (
+				87D08D7121A8D0D800C21FD3 /* DashiKit.h */,
+				87D08D7221A8D0D800C21FD3 /* Info.plist */,
+				87D08D6321A8CCCF00C21FD3 /* PostUseCase.swift */,
+				87D08D6421A8CCCF00C21FD3 /* Strings.swift */,
+			);
+			path = DashiKit;
+			sourceTree = "<group>";
+		};
+		87EDDA62219A0C0000552A5D = {
+			isa = PBXGroup;
+			children = (
+				87EDDA97219A135300552A5D /* Share */,
+				87EDDA6D219A0C0000552A5D /* Siridashi */,
+				87EDDA85219A0C4200552A5D /* DashiIntents */,
+				87D08D7021A8D0D800C21FD3 /* DashiKit */,
+				87EDDA6C219A0C0000552A5D /* Products */,
+				526C24C455A73530D6B8CC5C /* Pods */,
+				F6C0817D2B40848C63D1B6F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87EDDA6C219A0C0000552A5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87EDDA6B219A0C0000552A5D /* Siridashi.app */,
+				87EDDA84219A0C4200552A5D /* DashiIntents.appex */,
+				87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87EDDA6D219A0C0000552A5D /* Siridashi */ = {
+			isa = PBXGroup;
+			children = (
+				87D08D6721A8CEB800C21FD3 /* Siridashi.entitlements */,
+				87EDDA6E219A0C0000552A5D /* AppDelegate.swift */,
+				87EDDA70219A0C0000552A5D /* ViewController.swift */,
+				87EDDA72219A0C0000552A5D /* Main.storyboard */,
+				87EDDA75219A0C0100552A5D /* Assets.xcassets */,
+				87EDDA77219A0C0100552A5D /* LaunchScreen.storyboard */,
+				87EDDA7A219A0C0100552A5D /* Info.plist */,
+			);
+			path = Siridashi;
+			sourceTree = "<group>";
+		};
+		87EDDA85219A0C4200552A5D /* DashiIntents */ = {
+			isa = PBXGroup;
+			children = (
+				87B05180219C3F0900FAEA80 /* DashiSendIntentHandler.swift */,
+				87EDDA86219A0C4200552A5D /* IntentHandler.swift */,
+				87EDDA88219A0C4200552A5D /* Info.plist */,
+			);
+			path = DashiIntents;
+			sourceTree = "<group>";
+		};
+		87EDDA97219A135300552A5D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				87EDDA98219A136F00552A5D /* Intents.intentdefinition */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		F6C0817D2B40848C63D1B6F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2696AFAAA3C75370679FEF8F /* Pods_DashiIntents.framework */,
+				10727178D0C94E7052670F67 /* Pods_Siridashi.framework */,
+				D6FC36BA922310F9E7D92D4C /* Pods_DashiKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87D08D6A21A8D0D800C21FD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D08D7321A8D0D800C21FD3 /* DashiKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87D08D6E21A8D0D800C21FD3 /* DashiKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D08D7821A8D0D800C21FD3 /* Build configuration list for PBXNativeTarget "DashiKit" */;
+			buildPhases = (
+				A74D8D422F393A6F96E3A5D9 /* [CP] Check Pods Manifest.lock */,
+				87D08D6A21A8D0D800C21FD3 /* Headers */,
+				87D08D6B21A8D0D800C21FD3 /* Sources */,
+				87D08D6C21A8D0D800C21FD3 /* Frameworks */,
+				87D08D6D21A8D0D800C21FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashiKit;
+			productName = DashiKit;
+			productReference = 87D08D6F21A8D0D800C21FD3 /* DashiKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87EDDA6A219A0C0000552A5D /* Siridashi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EDDA7D219A0C0100552A5D /* Build configuration list for PBXNativeTarget "Siridashi" */;
+			buildPhases = (
+				71EC87C09F9DCF14C5A2400B /* [CP] Check Pods Manifest.lock */,
+				87EDDA67219A0C0000552A5D /* Sources */,
+				87EDDA68219A0C0000552A5D /* Frameworks */,
+				87EDDA69219A0C0000552A5D /* Resources */,
+				87EDDA8F219A0C4200552A5D /* Embed App Extensions */,
+				A67A2DFA5F1A8772637DA8CA /* [CP] Embed Pods Frameworks */,
+				87D08D7B21A8D0D800C21FD3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87EDDA8A219A0C4200552A5D /* PBXTargetDependency */,
+				87D08D7521A8D0D800C21FD3 /* PBXTargetDependency */,
+			);
+			name = Siridashi;
+			productName = Siridashi;
+			productReference = 87EDDA6B219A0C0000552A5D /* Siridashi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87EDDA83219A0C4200552A5D /* DashiIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EDDA8C219A0C4200552A5D /* Build configuration list for PBXNativeTarget "DashiIntents" */;
+			buildPhases = (
+				2A7F0EA1C9DD2FB57CEE4384 /* [CP] Check Pods Manifest.lock */,
+				87EDDA80219A0C4200552A5D /* Sources */,
+				87EDDA81219A0C4200552A5D /* Frameworks */,
+				87EDDA82219A0C4200552A5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashiIntents;
+			productName = DashiIntents;
+			productReference = 87EDDA84219A0C4200552A5D /* DashiIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87EDDA63219A0C0000552A5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kaname Noto";
+				TargetAttributes = {
+					87D08D6E21A8D0D800C21FD3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					87EDDA6A219A0C0000552A5D = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					87EDDA83219A0C4200552A5D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 87EDDA66219A0C0000552A5D /* Build configuration list for PBXProject "Siridashi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87EDDA62219A0C0000552A5D;
+			productRefGroup = 87EDDA6C219A0C0000552A5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87EDDA6A219A0C0000552A5D /* Siridashi */,
+				87D08D6E21A8D0D800C21FD3 /* DashiKit */,
+				87EDDA83219A0C4200552A5D /* DashiIntents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87D08D6D21A8D0D800C21FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA69219A0C0000552A5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EDDA79219A0C0100552A5D /* LaunchScreen.storyboard in Resources */,
+				87EDDA76219A0C0100552A5D /* Assets.xcassets in Resources */,
+				87EDDA74219A0C0000552A5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA82219A0C4200552A5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A7F0EA1C9DD2FB57CEE4384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DashiIntents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71EC87C09F9DCF14C5A2400B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siridashi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67A2DFA5F1A8772637DA8CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Siridashi/Pods-Siridashi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SKClient/SKClient.framework",
+				"${BUILT_PRODUCTS_DIR}/SKCore/SKCore.framework",
+				"${BUILT_PRODUCTS_DIR}/SKRTMAPI/SKRTMAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/SKServer/SKServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SKWebAPI/SKWebAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackKit/SlackKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKRTMAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKWebAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Siridashi/Pods-Siridashi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74D8D422F393A6F96E3A5D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DashiKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87D08D6B21A8D0D800C21FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D08D7E21A8D0F400C21FD3 /* Strings.swift in Sources */,
+				87D08D7D21A8D0F400C21FD3 /* PostUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA67219A0C0000552A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EDDA9B219A175700552A5D /* Intents.intentdefinition in Sources */,
+				87EDDA71219A0C0000552A5D /* ViewController.swift in Sources */,
+				87EDDA6F219A0C0000552A5D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87EDDA80219A0C4200552A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87EDDA99219A136F00552A5D /* Intents.intentdefinition in Sources */,
+				87EDDA87219A0C4200552A5D /* IntentHandler.swift in Sources */,
+				87B05182219C3F1000FAEA80 /* DashiSendIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87D08D7521A8D0D800C21FD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D08D6E21A8D0D800C21FD3 /* DashiKit */;
+			targetProxy = 87D08D7421A8D0D800C21FD3 /* PBXContainerItemProxy */;
+		};
+		87EDDA8A219A0C4200552A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87EDDA83219A0C4200552A5D /* DashiIntents */;
+			targetProxy = 87EDDA89219A0C4200552A5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87EDDA72219A0C0000552A5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87EDDA73219A0C0000552A5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87EDDA77219A0C0100552A5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87EDDA78219A0C0100552A5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87D08D7921A8D0D800C21FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5310CC2696CD95CEE5AEB9F /* Pods-DashiKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DashiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.DashiKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87D08D7A21A8D0D800C21FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07092975282A86B633D46B07 /* Pods-DashiKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DashiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.DashiKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87EDDA7B219A0C0100552A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87EDDA7C219A0C0100552A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87EDDA7E219A0C0100552A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF79356E7B2C15B9E7292B75 /* Pods-Siridashi.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Siridashi/Siridashi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				INFOPLIST_FILE = Siridashi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.Siridashi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87EDDA7F219A0C0100552A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519F8A0CD89556A3743ED572 /* Pods-Siridashi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Siridashi/Siridashi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				INFOPLIST_FILE = Siridashi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.Siridashi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87EDDA8D219A0C4200552A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A999B95A78798ACC994874 /* Pods-DashiIntents.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				INFOPLIST_FILE = DashiIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.Siridashi.DashiIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87EDDA8E219A0C4200552A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42ABAF8931B05C9A324391D1 /* Pods-DashiIntents.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74F8874BW5;
+				INFOPLIST_FILE = DashiIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.irimasu.Siridashi.DashiIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87D08D7821A8D0D800C21FD3 /* Build configuration list for PBXNativeTarget "DashiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D08D7921A8D0D800C21FD3 /* Debug */,
+				87D08D7A21A8D0D800C21FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87EDDA66219A0C0000552A5D /* Build configuration list for PBXProject "Siridashi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EDDA7B219A0C0100552A5D /* Debug */,
+				87EDDA7C219A0C0100552A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87EDDA7D219A0C0100552A5D /* Build configuration list for PBXNativeTarget "Siridashi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EDDA7E219A0C0100552A5D /* Debug */,
+				87EDDA7F219A0C0100552A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87EDDA8C219A0C4200552A5D /* Build configuration list for PBXNativeTarget "DashiIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EDDA8D219A0C4200552A5D /* Debug */,
+				87EDDA8E219A0C4200552A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87EDDA63219A0C0000552A5D /* Project object */;
+}
